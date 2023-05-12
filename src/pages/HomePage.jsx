@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import Body from "../components/Body"
 import Phone from "../components/Phone"
 
-const CardHome = styled.body`
+const CardHome = styled.article`
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,13 +12,13 @@ const CardHome = styled.body`
 `
 
 
-const CardLeftHome = styled.article`
+const CardLeftHome = styled.section`
     width: 50%;
     height: 100%;
     background-color: white;
 `
 
-const CardRightHome = styled.article`
+const CardRightHome = styled.section`
     width: 50%;
     height: 100%;
     background-color: #8EFF7B;
@@ -28,7 +28,7 @@ function HomePage() {
     return (
         <CardHome>
             <CardLeftHome>
-                <Header/>
+                <Header width="50%"/>
                 <Body/>
             </CardLeftHome>
             <CardRightHome>

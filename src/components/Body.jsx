@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link } from 'react-router-dom'
 
 const CardArticle = styled.article`
+    margin-top: 100px;
     padding: 50px;
     display: flex;
     flex-direction: column;

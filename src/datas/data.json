@@ -1,6 +1,7 @@
 [
     {
       "name": "Omelette aux épinards et au fromage de chèvre",
+      "picture":"picture1.jpg",
       "ingredients" : [
         {
             "ingredient": "Oeufs",
@@ -56,6 +57,7 @@
     },
     {
       "name": "Poulet grillé avec légumes rôtis",
+      "picture":"picture2.jpg",
       "ingredients" : [
         {
             "ingredient": "Poulet",
@@ -107,6 +109,7 @@
     },
     {
         "name": "Saumon grillé avec asperges et crème d'avocat",
+        "picture":"picture3.jpg",
         "ingredients" : [
             {
                 "ingredient": "Oignons",
@@ -167,6 +170,7 @@
     },
     {
         "name": "Salade de poulet césar",
+        "picture":"picture4.jpeg",
         "ingredients" : [
             {
                 "ingredient": "Escalope de poulet",
@@ -249,6 +253,7 @@
     },
     {
         "name": "Steak grillé avec brocoli rôti",
+        "picture":"picture5.png",
         "ingredients" : [
             {
                 "ingredient": "Brocoli",
@@ -306,6 +311,7 @@
     },
     {
         "name": "Poulet gratiné aux poivrons et courgettes",
+        "picture":"picture6.png",
         "ingredients" : [
             {
                 "ingredient": "Coulis de poivrons",
@@ -362,6 +368,7 @@
     },
     {
         "name": "Salade de thon avec avocat et concombre",
+        "picture":"picture7.jpg",
         "ingredients" : [
             {
                 "ingredient": "Thon",
@@ -401,6 +408,7 @@
     },
     {
         "name": "Poulet rôti avec chou-fleur rôti",
+        "picture":"picture8.jpg",
         "ingredients" : [
             {
                 "ingredient": "Filet de poulet",
@@ -454,6 +462,7 @@
     },
     {
         "name": "Bavette de boeuf avec salade de roquette et de tomates cerises",
+        "picture":"picture9.jpg",
         "ingredients" : [
             {
                 "ingredient": "Bavette de boeuf",
@@ -500,6 +509,7 @@
     },
     {
         "name": "Sardine avec son caviar d'aubergine et sa salade de tomate",
+        "picture":"picture10.jpg",
         "ingredients" : [
             {
                 "ingredient": "Boite de sardine",
@@ -552,6 +562,7 @@
     },
     {
         "name": "Omelette aux tomates",
+        "picture":"picture11.jpg",
         "ingredients" : [
             {
                 "ingredient": "Oignons",
@@ -595,6 +606,7 @@
     },
     {
         "name": "Shakshuka aux oeufs et tomates",
+        "picture":"picture12.jpg",
         "ingredients" : [
             {
                 "ingredient": "Tomates",
@@ -661,6 +673,7 @@
     },
     {
         "name": "Frittata méditerranéenne express et salsa à l’avocat",
+        "picture":"picture13.jpg",
         "ingredients" : [
             {
                 "ingredient": "Huile d'olive",
@@ -733,6 +746,7 @@
     },
     {
         "name": "Oeufs au four à la sauce tomate et au gruyère râpé",
+        "picture":"picture14.jpg",
         "ingredients" : [
             {
                 "ingredient": "Oeufs frais",
@@ -781,6 +795,7 @@
     },
     {
         "name": "Avocat farci au thon et sa salade de concombre au yaourt",
+        "picture":"picture15.jpg",
         "ingredients" : [
             {
                 "ingredient": "Avocats  mûrs",
@@ -849,6 +864,7 @@
     },
     {
         "name": "Frittata aux asperges, petits pois et feta avec tomates rôties",
+        "picture":"picture16.jpg",
         "ingredients" : [
             {
                 "ingredient": "Asperges vertes",
@@ -920,6 +936,7 @@
     },
     {
         "name": "Curry de crevettes et purée de tomates",
+        "picture":"picture17.png",
         "ingredients" : [
             {
                 "ingredient": "Crevettes cuites décortiquées",

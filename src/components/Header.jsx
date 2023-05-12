@@ -8,6 +8,9 @@ const CardHeader = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    position: fixed;
+
 `
 
 const CardLogo = styled(Link)`
@@ -22,9 +25,9 @@ const CardMenu = styled.div`
     margin-right: 20px;
 `
 
-function Header() {
+function Header(props) {
     return (
-        <CardHeader>
+        <CardHeader style={{width: `${props.width}`}}>
             <CardLogo to="/">
                 Keto&nbsp;
                 <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">

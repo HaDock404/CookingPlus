@@ -11,23 +11,45 @@ const CardCalendar = styled.article`
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 `
 
 
 const CardLeftCalendar = styled.section`
-    width: 80%;
+    width: 75%;
     height: 100%;
-    background-color: white;
+    background-color: #D8FFD1;
     display: flex;
     flex-direction: column;
     align-items: center;
 `
 
 const CardRightCalendar = styled.section`
-    width: 20%;
+    width: 25%;
     height: 100%;
     background-color: #8EFF7B;
+    position: fixed;
+    right: 0;
+`
+
+const CardButton = styled.div`
+    width: 350px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #8EFF7B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 1000;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
 `
 
 function CalendarPage() {
@@ -73,8 +95,9 @@ function CalendarPage() {
 
     return (
         <CardCalendar>
+            <Header width="75%"/>
             <CardLeftCalendar>
-                <Header/>
+                
                 <Calendar 
                     name1={data[number1].name}
                     name2={data[number2].name}
@@ -108,7 +131,7 @@ function CalendarPage() {
 
                     fonction={test}
                 />
-                <button onClick={refreshPage}>Click me</button>
+                <CardButton onClick={refreshPage}>Générer un nouveau planning</CardButton>
             </CardLeftCalendar>
 
             <CardRightCalendar>
