@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Header from "../components/Header"
 import Calendar from "../components/Calendar"
 import Recipe from "../components/Recipe"
+import Print from "../components/Print"
+import Connexion from "../components/Connexion"
 
 import data from '../datas/data.json'
 
@@ -30,6 +32,9 @@ const CardRightCalendar = styled.section`
     background-color: #8EFF7B;
     position: fixed;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 const CardButton = styled.div`
@@ -136,6 +141,8 @@ function CalendarPage() {
 
             <CardRightCalendar>
                 <Recipe test={text}/>
+                <Print/>
+                <Connexion/>
             </CardRightCalendar>
         </CardCalendar>
     )

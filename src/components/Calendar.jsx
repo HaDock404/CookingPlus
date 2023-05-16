@@ -2,6 +2,8 @@ import { useState } from "react"
 import styled from "styled-components"
 
 import data from '../datas/data.json'
+import heart from '../assets/heart.svg'
+import clock from '../assets/clock.svg'
 
 
 const CardArticle = styled.article`
@@ -82,13 +84,63 @@ const CardTitleRecipe = styled.div`
 const BoxText = styled.div`
     display: flex;
     flex-direction: column;
+    white-space: normal;
+    position: relative;
 `
 
-const CardSubtitleRecipe = styled.div`
-    font-size: 14px;
+const CardSubtitleRecipe = styled.h3`
+    font-size: 12px;
     color: #565656;
+    margin: 0px;
+    width: auto;
+    margin: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+`
+
+const BoxInfo = styled.div`
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`
+
+const CardDifficulty = styled.h3`
+    margin: 0;
     margin-left: 10px;
-    margin-top: 10px;
+    color: #8EFF7B;
+    font-weight: 1000;
+`
+
+const CardTime = styled.h3`
+    margin: 0;
+    color: #8EFF7B;
+    font-weight: 1000;
+`
+
+const CardLike = styled.h3`
+    margin: 0;
+    margin-right: 30px;
+    color: #8EFF7B;
+    font-weight: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+`
+
+const CardIconImg = styled.img`
+    margin-right: 5px; 
+    width: 15px; 
+    height: 15px;
 `
 
 function Calendar(props) {
@@ -126,13 +178,6 @@ function Calendar(props) {
         setShadow13("none")
         setShadow14("none")
         return
-    }
-
-    function InsertSubtitle(props) {
-        return (
-            data[props.numberIngredient].ingredients.map((e, i=0) => (
-                <CardSubtitleRecipe key={i++}>{e.ingredient}</CardSubtitleRecipe>))
-        )
     }
 
     const [scale1, setScale1] = useState("1.05")
@@ -181,7 +226,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number1].name}</CardTitleRecipe>
-                        <InsertSubtitle numberIngredient={props.number1}/>
+                        <CardSubtitleRecipe>{data[props.number1].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number1].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number1].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number1].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxLunch>
@@ -195,6 +245,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number2].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number2].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number2].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number2].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number2].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
@@ -213,6 +269,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number3].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number3].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number3].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number3].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number3].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxLunch>
@@ -226,6 +288,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number4].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number4].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number4].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number4].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number4].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
@@ -244,6 +312,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number5].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number5].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number5].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number5].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number5].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxLunch>
@@ -257,6 +331,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number6].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number6].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number6].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number6].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number6].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
@@ -275,6 +355,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number7].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number7].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number7].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number7].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number7].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxLunch>
@@ -288,6 +374,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number8].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number8].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number8].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number8].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number8].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
@@ -306,6 +398,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number9].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number9].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number9].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number9].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number9].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxLunch>
@@ -319,6 +417,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number10].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number10].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number10].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number10].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number10].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
@@ -339,6 +443,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number11].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number11].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number11].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number11].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number11].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxLunch>
@@ -352,6 +462,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number12].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number12].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number12].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number12].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number12].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
@@ -374,6 +490,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number13].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number13].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number13].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number13].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number13].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                    
                 </BoxLunch>
@@ -387,6 +509,12 @@ function Calendar(props) {
                     </BoxImg>
                     <BoxText>
                         <CardTitleRecipe>{data[props.number14].name}</CardTitleRecipe>
+                        <CardSubtitleRecipe>{data[props.number14].instructions[0]}..</CardSubtitleRecipe>
+                        <BoxInfo>
+                            <CardDifficulty>{data[props.number14].difficulty}</CardDifficulty>
+                            <CardTime><CardIconImg src={clock} alt=""/>{data[props.number14].time}</CardTime>
+                            <CardLike><CardIconImg src={heart} alt=""/>{data[props.number14].like}</CardLike>
+                        </BoxInfo>
                     </BoxText>
                     
                 </BoxDinner>
