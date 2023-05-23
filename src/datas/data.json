@@ -1005,7 +1005,22 @@
                 "unitMeasure": ""
             },
             {
+                "ingredient": "Tomate",
+                "quantity": 1,
+                "unitMeasure": "kg"
+            },
+            {
                 "ingredient": "Oignon",
+                "quantity": 2,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Poireau",
+                "quantity": 1,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Carotte",
                 "quantity": 1,
                 "unitMeasure": ""
             },
@@ -1061,11 +1076,193 @@
             }
           ],
           "instructions": [
+            "Pour la purée de tomate, Eplucher et laver l'oignon, la carotte, le céleri, et le blanc de poireau. Découper en petits dés et faire revenir les légumes quelques minutes dans l'huile d'olive. ",
+            "Laver a peu près 1kg de tomates, oter le pédoncule et ajouter au reste des légumes. Couvrir et laisser mijoter 45 minutes. Mixer et presser la pulpe au presse-purée.",
             "Émincez les oignons, chauffez de l'huile dans une sauteuse et faites-les revenir pendant 5 min, en remuant avec une spatule.",
             "Ajoutez les gousses d'ail hachées, le gingembre, le piment séché, la poudre de piment, le curcuma, la coriandre ciselée et le cumin. Mouillez avec 2 c. à soupe d'eau et faites revenir le mélange d'épices pendant 2 min en remuant pour ne pas qu'il accroche.",
             "Ajoutez les tomates avec 50 ml d'eau. Laissez réduire pendant 5 min. Puis ajoutez le lait de coco, salez et mélangez.",
             "Ajoutez les crevettes, laissez cuire environ 20 min, jusqu'à l'obtention d'une sauce curry onctueuse.",
             "Servez avec une salade assaisonnée"
+            ]
+    },
+    {
+        "name": "Oeufs à la coque avec roulés d'avocat au bacon",
+        "picture":"picture18.jpeg",
+        "difficulty":"Facile",
+        "time":"25min",
+        "like":"421",
+        "ingredients" : [
+            {
+                "ingredient": "Oeufs",
+                "quantity": 4,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Avocat",
+                "quantity": 3,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Bacon",
+                "quantity": 24,
+                "unitMeasure": "tranches"
+            },
+            {
+                "ingredient": "Poivre",
+                "quantity": 0,
+                "unitMeasure": ""
+            }
+          ],
+          "instructions": [
+            "Sortez-les oeufs du réfrigérateur 1 heure avant de les cuire pour qu’ils soient à température ambiante",
+            "Préchauffez le four à 210°C.",
+            "Coupez l'avocat en 2, retirez le noyau et la peau à l'aide d'une cuillère à soupe. Détaillez chaque moitié d'avocat en 4.",
+            "Enroulez chaque morceau d'avocat avec une tranche de bacon. Poivrez, et enfournez pour 10 minutes.",
+            "Mettre de l'eau à chauffer Lorsque l'eau bout, plonger les oeufs dedans avec une cuillère et compter 3 minutes de cuisson avant de les sortir de l'eau"
+            ]
+    },
+    {
+        "name": "Saumon en Papillotes aux petits légumes",
+        "picture":"picture19.jpeg",
+        "difficulty":"Facile",
+        "time":"40min",
+        "like":"291",
+        "ingredients" : [
+            {
+                "ingredient": "Tomate cerise",
+                "quantity": 8,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Poireau",
+                "quantity": 0.5,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Carotte",
+                "quantity": 2,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Crème fraîche",
+                "quantity": 2,
+                "unitMeasure": "c à s."
+            },
+            {
+                "ingredient": "Saumon frais",
+                "quantity": 2,
+                "unitMeasure": "pavés"
+            },
+            {
+                "ingredient": "Citron",
+                "quantity": 0.5,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Ail",
+                "quantity": 0.5,
+                "unitMeasure": "gousses"
+            },
+            {
+                "ingredient": "Huile d'olive",
+                "quantity": 2,
+                "unitMeasure": "c à s."
+            },
+            {
+                "ingredient": "Poivre",
+                "quantity": 0,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Sel",
+                "quantity": 0,
+                "unitMeasure": ""
+            }
+          ],
+          "instructions": [
+            "Couper les tomates cerise en deux. Eplucher et couper en fines rondelles les carottes. Couper en lamelles le blanc de poireau.",
+            "Badigeonner légèrement d’huile d’olive 4 feuilles d’aluminium. Y placer le saumon, les tomates cerise, le poireau et les rondelles de carottes.",
+            "Ajouter une cuillère de crème fraîche sur le saumon, quelques gouttes de jus de citron, un peu d’ail et de persil. Poivrer, saler et refermer des papillotes.",
+            "Enfin, enfourner environ 30-35 min au four à 180°C (thermostat 6)."
+            ]
+    },
+    {
+        "name": "Mijoté de poisson curry et lait de coco avec purée de chou fleur",
+        "picture":"picture20.png",
+        "difficulty":"Facile",
+        "time":"60min",
+        "like":"386",
+        "ingredients" : [
+            {
+                "ingredient": "Cabillaud",
+                "quantity": 2,
+                "unitMeasure": "pavés"
+            },
+            {
+                "ingredient": "Oignon",
+                "quantity": 0.5,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Poivron",
+                "quantity": 1,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Lait de coco",
+                "quantity": 10,
+                "unitMeasure": "cl"
+            },
+            {
+                "ingredient": "Curry en poudre",
+                "quantity": 0.5,
+                "unitMeasure": "c à s."
+            },
+            {
+                "ingredient": "Pâte de curry",
+                "quantity": 0.5,
+                "unitMeasure": "c à c."
+            },
+            {
+                "ingredient": "Huile d'olive",
+                "quantity": 0,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Sel et poivre",
+                "quantity": 0,
+                "unitMeasure": ""
+            },
+            {
+                "ingredient": "Chou-fleur",
+                "quantity": 0.5,
+                "unitMeasure": "bouquet"
+            },
+            {
+                "ingredient": "Lait",
+                "quantity": 1,
+                "unitMeasure": "tasse"
+            },
+            {
+                "ingredient": "Beurre",
+                "quantity": 15,
+                "unitMeasure": "ml"
+            },
+            {
+                "ingredient": "Petit oignon",
+                "quantity": 0.5,
+                "unitMeasure": ""
+            }
+          ],
+          "instructions": [
+            "Pour le mijoté de poisson, épluchez et émincez finement l’oignon. Lavez et coupez en deux les poivrons. Enlevez les graines et émincez-les en lamelles.",
+            "Dans un wok ou une cocotte, faites revenir l’oignon et les poivrons dans 1 c. à soupe d’huile d’olive pendant 5 min. Ajouter ensuite les deux curry et mélangez pendant encore 2 min.",
+            "Incorporez doucement le lait de coco puis l’eau. Une fois que la sauce commence à frémir, rajoutez le cabillaud coupé en gros morceaux. Salez et poivrez.",
+            "Laisser mijoter 10 min en retournant le poisson toutes les 5 min. Vérifiez la cuisson avec la pointe d’un couteau. Dégustez le poisson bien chaud.",
+            "Pour la purée de chou-fleur, épluchez l'oignon et émincez-le.",
+            "Chauffez une casserole avec le beurre et faites-y revenir l'oignon.",
+            "Ajoutez le chou-fleur et le lait. Portez à ébullition puis laissez mijoter 15 min à découvert.",
+            "Mixez grossièrement l'ensemble, salez et poivrez."
             ]
     }
   ]

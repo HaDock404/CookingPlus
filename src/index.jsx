@@ -8,6 +8,7 @@ import {
 
 import HomePage from './pages/HomePage';
 import CalendarPage from './pages/CalendarPage';
+import PrintPage from './pages/PrintPage';
 
 import reportWebVitals from './reportWebVitals';
 import './styles/normalize.css'
@@ -20,6 +21,7 @@ root.render(
         <Routes>
           <Route path="/" element={<HomePage />}/>
           <Route path="/calendar" element={<CalendarPage />}/>
+          <Route path="/print" element={<PrintPage />}/>
         </Routes>
   </BrowserRouter>,
 );
